@@ -6,132 +6,108 @@
 <link rel="stylesheet" href="css/main.css">
 <meta charset="UTF-8">
 <title>responsive</title>
-<!-- 
-/* 
-<style>
-     
-   #blue {
-    background-color: blue;
-    width: 75%;
-    padding: 10px;
-   }
-   #darkblue {
-    background-color: darkblue;
-    width: 75%;
 
-
-   }
-   #lightblue {
-    background-color: lightblue;
-   }
-   #purple {
-    background-color: purple;
-   
-
-   }
-   #green {
-    background-color: green;
-   
-   }
-   #black {
-    background-color: black;
-    
-   }
-   #red {
-    background-color: red;
-   
-   }
-
-@media screen and  (min-width: 768px) {
- #blue {
-    background-color: darkred;
-    width: 90%;
-    font-size: 20px;
-    color: white;
-    padding: 25px;
- }
-}
-
-@media screen and  (min-width: 1024px) {
- #blue {
-    background-color: green;
-    width: 80%;
-    font-size: 25px;
-    color: lightgreen;
- }
-}
-</style>
-*/ -->
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="row">
-        <div class="col-sm-1 col-md-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-        <div class="col-sm-1">
-            <div></div>
-        </div>
-
-
-    </div>
-
-
-
-
-    <div>
-        <div class="row">
-            <div class="col-sm-6 col-md-3 col-lg-6">
-                <div></div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div></div>
-            </div>
-        </div>
-        
-    </div>
-   <section class="row">
-        <div class="col-sm-12 col-md-4">
-            <div></div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div></div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div></div>
-        </div>
+<main class="wrapper">
+   <section class="col-sm-12">
+        <div><h1>Responsive Grid</h1></div>
    </section>
 
+    <section class="row">
+        <div class="col-sm-7 col-md-5 col-lg-5">
+            <div><p>Responsive web design helps with matters of layout, but it is not a solutionto all mobile web design challenges. The fact is that providing the best experiencesfor your users and their chosen device may require optimizations that go beyond adjusting the look and feel. Some problems are better addressedby using the server to detect the device and its capabilities and then makingdecisions on what to send back. Using progressive enhancement, you candeliver a baseline experience for the most basic browsers and devices, butsend enhanced options for devices that can use them.</p></div>
+        </div>
+        <div class="col-sm-5 col-md-7 col-lg-7">
+            <div><p>For some sites and services, it may be preferable to build a separate mobilesite with a customized interfaceand feature set that takes advantage of phone capabilities like geolocation.That said, although responsive design won’t fix everything, it is an important part of the solution for delivering satisfactory experiences on a wide varietyof browsers.</p></div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-8 col-md-4 col-lg-9">
+            <div><p>Responsive Design Requires:</p>
+            <ul>
+                <li>Fluid layouts</li>
+                <li>Flexible image</li>
+                <li>CSS media queries</li>
+                <li> Meta viewport</li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-8 col-lg-3">
+            <div>
+                <p>Fluid layouts are created using percentage width measurementsso that elements resize proportionally to fill the available width of the screenor window.</p>
+                <p>Images need to  scale down to fit thewidth of the container they are in. If the container is larger than the image—forexample, in the tablet or desktop layouts—the image does not scale larger; it stops at 100% of its original size.</p>               
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-10 col-md-3 col-lg-6">
+            <div><p>
+                Media queries allow designers to deliver styles based on media type. Thedefined media types are print, speech, handheld, braille, projection, screen,tty, and tv. The keyword all indicates that the styles apply to all mediatypes. Media queries can also evaluate specific media features, such as thedevice-width, orientation, and resolution.</p></div>
+        </div>
+        <div class="col-sm-2 col-md-9 col-lg-10">
+            <div>
+                <p>To fit standard websites onto small screens, mobile browsers render the pageon a canvas called the viewport and then shrink that viewport down to fitthe width of the screen (device width).</p>
+                
+                <p> This line tells the browser to set the width of the viewport equal to the widthof the device screen (width=device-width), whatever that happens to be. Theinitial-scale sets the zoom level to 1 (100%).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-9 col-md-10 col-lg-10">
+            <div>
+                <p>
+                    An em is a relative unit of measurement. Once the dimension of an em for a text element is calculated by the browser,it can be used for all sorts of other measurements, such as indents, margins,the width of the element on the page, and so on.
+                </p>
+                <p>
+                    The tricky aspect to using ems is that they are based on the inheritedsize of the element, which means that their size is based on the context inwhich they are applied. If you have many nested elements, the size increaseor decrease will compound with each nested level.           
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-2 col-lg-2">
+            <div>
+                <h2>em<span>s</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-8 col-md-7 col-lg-6">
+            <div>
+                <p>
+                    A rem is a relative unit of measurement. Once the dimension of an em for a text element is calculated by the browser,it can be used for all sorts of other measurements, such as indents, margins,the width of the element on the page, and so on.
+                </p>
+                <p> 
+                If you specify the size of the htmlelement (presumably to 100%), all elements that are specified in rem measurementswill be relative to that size, not their inherited size. This gets rid of the compoundingissue that makes ems potentially aggravating.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-5 col-lg-6">
+            <div>
+                <h2>Rem <span>s</span></h2>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row">
+        <div class="col-sm-1 col-md-7" id="bg-hands">
+        </div>
+        <div class="col-sm-11 col-md-5">
+            <div></div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-sm-6 c0l-md-5 col-lg-6">
+            <img src="img/colored-pencils.jpg" class="img-responsive">
+        </div>
+    </div>
+    
+    
+</main>
 </body>
 </html>

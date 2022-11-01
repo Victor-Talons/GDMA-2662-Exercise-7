@@ -63,8 +63,13 @@ html {
 
 
 /* ----- TYPOGRAPHY ----- */ 
-
-
+h1 {
+        text-align: center;
+        padding: 30px;
+}
+html {
+        font-family: 'Gill Sans', sans-serif;
+}
 
 
 
@@ -97,11 +102,15 @@ html {
 }
 /* exercise 7 exclusive */
 [class*="col-"] div {
-        background-color: darkred;
-        height: 200px;
+        background-color: #1D0000;
+        height: 100%;
+        color: #F2A6BC;
 }
 [class*="col-"] {
         padding: 10px 5px ;
+}
+.img-responsive {
+        max-width: 100%;
 }
 /* exercise 7 exclusive */
 
@@ -238,6 +247,25 @@ html {
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
+
+.row:last-child {
+        justify-content: center;
+}
+
+
+#bg-hands {
+        background: url(../img/hand-ring.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+
+        background-clip: content-box;
+        height: 200px;
+
+}
 
 /* ----- NAV ----- */
 
