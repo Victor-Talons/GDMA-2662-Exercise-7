@@ -8,24 +8,13 @@
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors, Lists
-        - Content
-        - Ids 
+
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
         - Content
-                - Group selectors
-                - #header
-                - #Flex-box
-                - #Container
-                - #Axis
-                - #Items
-                - Footersss
         
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Screenreader	
-        - Color    
-        - Margin
 --------------------------------------------------------------*/
 
 
@@ -73,16 +62,7 @@ h1 {
 
 
 
-/* ----- CONTENT ----- */
 
-
-
-
-/* ----- LISTS ----- */
-
-
-
-/* ----- ANCHOR ----- */
 
 
 
@@ -100,20 +80,22 @@ h1 {
         justify-content: space-between;
         flex-flow: wrap;
 }
+.img-responsive {
+        max-width: 100%;
+}
 /* exercise 7 exclusive */
-[class*="col-"] div {
+[class*="col-"] div, [class*="col-"] header {
         background-color: #1D0000;
         height: 100%;
         color: #F2A6BC;
         padding: 1em;
 }
 [class*="col-"] {
-        padding: 1em 0.5px ;
-}
-.img-responsive {
-        max-width: 100%;
+        padding: .5em .5em ;
 }
 /* exercise 7 exclusive */
+
+
 
 .col-sm-1 {
         width: calc(100% * 1 /12);
