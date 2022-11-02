@@ -53,7 +53,8 @@
         box-sizing: border-box;
 }
 html {
-        font: 400 16px/28px 'Roboto Slab';
+        font-family: 'Gill Sans', sans-serif;
+        font-size: 1rem;
 }
 
 
@@ -66,10 +67,9 @@ html {
 h1 {
         text-align: center;
         padding: 30px;
+        font-size: 3rem;
 }
-html {
-        font-family: 'Gill Sans', sans-serif;
-}
+
 
 
 
@@ -105,10 +105,10 @@ html {
         background-color: #1D0000;
         height: 100%;
         color: #F2A6BC;
-        padding: 10px;
+        padding: 1em;
 }
 [class*="col-"] {
-        padding: 10px 5px ;
+        padding: 1em 0.5px ;
 }
 .img-responsive {
         max-width: 100%;
@@ -160,6 +160,9 @@ html {
         }
         [class*='col-'] {
                 padding: 10px;
+        }
+        html {
+                font-size: 1.2rem;
         }
 
         .col-md-1 {
