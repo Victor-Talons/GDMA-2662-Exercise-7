@@ -105,6 +105,7 @@ html {
         background-color: #1D0000;
         height: 100%;
         color: #F2A6BC;
+        padding: 10px;
 }
 [class*="col-"] {
         padding: 10px 5px ;
@@ -263,7 +264,7 @@ html {
         background-size: cover;
 
         background-clip: content-box;
-        height: 200px;
+        /* height: 200px; */
 
 }
 
